@@ -1,0 +1,176 @@
+.App h1{
+    text-align: center;
+}
+
+.ticket-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.ticket-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+
+/* Ticket List style */
+.ticket-list {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.ticket-list h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.ticket-list p {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.ticket-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ticket-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #4a90e2; /* accent stripe */
+  border-radius: 6px;
+  padding: 20px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+  background: #f7faff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ticket-card h3 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.ticket-card .ticket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ticket-card .ticket-info div {
+  display: flex;
+  justify-content: left;
+  font-size: 15px;
+}
+
+.ticket-card .ticket-info b {
+  color: #555;
+  width: 120px; /* fixed width for labels */
+}
+
+.ticket-card .ticket-info span {
+  color: #333;
+  font-weight: 500;
+}
+
+
+/* placed and unplaced */
+.student-update {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px; /* space between buttons */
+}
+
+.student-update button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* blue */
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.student-update button:first-child {
+  background-color: #28a745; /* green for Placed */
+}
+
+.student-update button:first-child:hover {
+  background-color: #1e7e34;
+}
+
+.student-update button:last-child {
+  background-color: #dc3545; /* red for Unplaced */
+}
+
+.student-update button:last-child:hover {
+  background-color: #a71d2a;
+}
+
